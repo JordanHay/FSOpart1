@@ -1,0 +1,32 @@
+import React from "react";
+
+const App = (props) => {
+  const course = "Half Stack application development";
+  const total = exercises1 + exercises2 + exercises3;
+  const part1 = {
+    name: "Fundamentals of React",
+    exercises: 10,
+  };
+  const part2 = {
+    name: "Using props to pass data",
+    exercises: 7,
+  };
+  const part3 = {
+    name: "State of a component",
+    exercises: 14,
+  };
+
+  return (
+    <div>
+      <Header course={props.course} />
+      <div>
+        <Part part1={(part1.name, part1.exercises)} />
+        <Part part2={(part2.name, part2.exercises)} />
+        <Part part3={(part3.name, part3.exercises)} />
+      </div>
+      <Total total={total} />
+    </div>
+  );
+};
+
+export default App;
